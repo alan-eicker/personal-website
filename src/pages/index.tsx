@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useAppContent } from './_app';
 
-export default function Home() {
+const Home = () => {
   const { content } = useAppContent();
 
   return (
@@ -15,9 +15,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <pre>{JSON.stringify(content, null, 2)}</pre>
-      </main>
+      <h1>Home</h1>
     </>
   );
-}
+};
+
+export default Home;

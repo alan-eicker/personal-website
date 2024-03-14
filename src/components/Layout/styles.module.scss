@@ -1,1 +1,16 @@
 @import '../../styles/abstracts';
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+}
+
+.content {
+  max-width: rem($breakpoint-large);
+}

@@ -4,9 +4,7 @@ import "styles/base.scss";
 import content from "../data/content.json";
 import { IAppContext } from "../interfaces/AppContext";
 
-const AppContext = createContext<IAppContext>({
-  content: {},
-});
+const AppContext = createContext<IAppContext | undefined>(undefined);
 
 export const useAppContent = () => useContext(AppContext);
 

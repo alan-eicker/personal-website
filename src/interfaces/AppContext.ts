@@ -9,6 +9,7 @@ export interface IAppContext {
     career: ICareer;
     recommendations: IRecommendations;
     projects: IProjects;
+    skills: ISkills;
   };
 }
 
@@ -56,10 +57,10 @@ export interface ICareer {
     url: string;
   };
   jobHistory: {
-    url: string;
-    duration: string;
     company: string;
-    positionHeld: string[];
+    url?: string;
+    duration: string;
+    positionsHeld: string[];
   }[];
 }
 
@@ -84,7 +85,7 @@ export interface IProjects {
   }[];
 }
 
-export interface Skills {
+export interface ISkills {
   title: string;
   items: {
     name: string;

@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { useAppContent } from "./_app";
+import Head from 'next/head';
+import { useAppContent } from './_app';
 
 export default function Home() {
   const { content } = useAppContent();

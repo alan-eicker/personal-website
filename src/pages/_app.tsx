@@ -1,8 +1,8 @@
-import { createContext, useContext } from "react";
-import type { AppProps } from "next/app";
-import "styles/base.scss";
-import content from "../data/content.json";
-import { IAppContext } from "../interfaces/AppContext";
+import { createContext, useContext } from 'react';
+import type { AppProps } from 'next/app';
+import 'styles/base.scss';
+import content from '../data/content.json';
+import { IAppContext } from '../interfaces/AppContext';
 
 const AppContext = createContext<IAppContext>({
   content: undefined,

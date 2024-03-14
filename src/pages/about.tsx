@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import withLayout from '../hocs/WithLayout';
-import { AboutProps } from '../interfaces/AppContent';
+import { AboutProps } from 'interfaces/AppContent';
 
 const About = ({ title, content }: AboutProps) => {
   return (
@@ -20,4 +19,4 @@ const About = ({ title, content }: AboutProps) => {
   );
 };
 
-export default withLayout(About);
+export default About;

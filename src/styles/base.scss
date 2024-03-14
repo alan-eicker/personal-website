@@ -1,2 +1,6 @@
 @import './reset';
 @import './abstracts';
+
+p {
+  margin-top: rem(16);
+}

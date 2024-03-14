@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import withLayout from '../hocs/WithLayout';
 
 const Home = () => {
   return (
@@ -18,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default withLayout(Home);
+export default Home;

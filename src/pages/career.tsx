@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import { CareerProps } from 'interfaces/AppContent';
 
-const Career = () => {
+const Career = ({ title, text, resumeLink, jobHistory }: CareerProps) => {
   return (
     <>
       <Head>
@@ -12,7 +13,10 @@ const Career = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Career</h1>
+      <h1>{title}</h1>
+      <p>{text}</p>
+      <p>{JSON.stringify(resumeLink)}</p>
+      <p>{JSON.stringify(jobHistory)}</p>
     </>
   );
 };

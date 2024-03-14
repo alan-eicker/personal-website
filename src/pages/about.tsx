@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { AboutProps } from 'interfaces/AppContent';
 
 const About = ({ title, content }: AboutProps) => {
+  const numYearsExperience = String(new Date().getFullYear() - 2007);
+
   return (
     <>
       <Head>
@@ -14,7 +16,7 @@ const About = ({ title, content }: AboutProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>{title}</h1>
-      <p>{content}</p>
+      <p>{content.replace(/@years/g, numYearsExperience)}</p>
     </>
   );
 };

@@ -1,16 +1,18 @@
 export interface IAppContext {
-  content: {
-    docTitle: string;
-    header: IHeader;
-    footer: IFooter;
-    hero: IHero;
-    preface: string;
-    bio: IBio;
-    career: ICareer;
-    recommendations: IRecommendations;
-    projects: IProjects;
-    skills: ISkills;
-  };
+  content:
+    | {
+        docTitle: string;
+        header: IHeader;
+        footer: IFooter;
+        hero: IHero;
+        preface: string;
+        bio: IBio;
+        career: ICareer;
+        recommendations: IRecommendations;
+        projects: IProjects;
+        skills: ISkills;
+      }
+    | undefined;
 }
 
 export interface IHeader {

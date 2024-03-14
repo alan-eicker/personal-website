@@ -1,6 +1,28 @@
 @import './reset';
 @import './abstracts';
 
+body {
+  background-color: $mainBg;
+  color: $white;
+  font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: rem($root-font-size);
+  padding: rem(18);
+}
+
 p {
   margin-top: rem(16);
+}
+
+p,
+li {
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
 }

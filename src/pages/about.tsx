@@ -1,9 +1,8 @@
 import Head from 'next/head';
-import { useAppContent } from './_app';
+import withLayout from '../hocs/WithLayout';
+import { AboutProps } from '../interfaces/AppContent';
 
-const About = () => {
-  const { content } = useAppContent();
-
+const About = ({ title, content }: AboutProps) => {
   return (
     <>
       <Head>
@@ -15,9 +14,10 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>About Me</h1>
+      <h1>{title}</h1>
+      <p>{content}</p>
     </>
   );
 };
 
-export default About;
+export default withLayout(About);

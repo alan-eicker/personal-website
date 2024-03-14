@@ -1,10 +1,7 @@
 import Head from 'next/head';
 import withLayout from '../hocs/WithLayout';
-import { useAppContent } from './_app';
 
 const Home = () => {
-  const { content } = useAppContent();
-
   return (
     <>
       <Head>

@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import { useAppContent } from './_app';
 
 const Skills = () => {
-  const { content } = useAppContent();
-
   return (
     <>
       <Head>

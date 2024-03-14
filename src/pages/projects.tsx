@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import { useAppContent } from './_app';
 
 const Projects = () => {
-  const { content } = useAppContent();
-
   return (
     <>
       <Head>

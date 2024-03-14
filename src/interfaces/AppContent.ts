@@ -1,26 +1,22 @@
-export interface IAppContext {
-  content:
-    | {
-        docTitle: string;
-        header: IHeader;
-        footer: IFooter;
-        hero: IHero;
-        preface: string;
-        bio: IBio;
-        career: ICareer;
-        recommendations: IRecommendations;
-        projects: IProjects;
-        skills: ISkills;
-      }
-    | undefined;
+export interface AppContent {
+  preface: string;
+  docTitle: string;
+  header: HeaderProps;
+  footer: FooterProps;
+  hero: HeroProps;
+  about: AboutProps;
+  career: CareerProps;
+  recommendations: RecommendationsProps;
+  projects: ProjectsProps;
+  skills: SkillsProps;
 }
 
-export interface IHeader {
+export interface HeaderProps {
   title: string;
   nav: string[];
 }
 
-export interface IFooter {
+export interface FooterProps {
   copyright: string;
   contactInfo: {
     email: string;
@@ -39,19 +35,19 @@ export interface IFooter {
   }[];
 }
 
-export interface IHero {
+export interface HeroProps {
   strapline: string;
   title: string;
   subtitle: string;
   text: string;
 }
 
-export interface IBio {
+export interface AboutProps {
   title: string;
   content: string;
 }
 
-export interface ICareer {
+export interface CareerProps {
   title: string;
   text: string;
   resumeLink: {
@@ -66,7 +62,7 @@ export interface ICareer {
   }[];
 }
 
-export interface IRecommendations {
+export interface RecommendationsProps {
   title: string;
   items: {
     referee: string;
@@ -75,7 +71,7 @@ export interface IRecommendations {
   }[];
 }
 
-export interface IProjects {
+export interface ProjectsProps {
   title: string;
   items: {
     title: string;
@@ -87,7 +83,7 @@ export interface IProjects {
   }[];
 }
 
-export interface ISkills {
+export interface SkillsProps {
   title: string;
   items: {
     name: string;

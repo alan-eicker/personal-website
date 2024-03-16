@@ -16,8 +16,8 @@ const Layout = ({ children, header, footer }: ILayoutProps) => {
       <Header {...header} />
       <main className={styles.main}>
         <div className={styles.content}>{children}</div>
-        <Footer {...footer} />
       </main>
+      <Footer {...footer} />
     </div>
   );
 };

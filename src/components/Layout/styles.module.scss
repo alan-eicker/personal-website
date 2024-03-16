@@ -12,10 +12,13 @@
 }
 
 .main {
+  align-items: center;
+  display: flex;
   flex: 1;
+  justify-content: center;
 }
 
 .content {
-  max-width: rem($breakpoint-large);
-  margin: 0 auto;
+  max-width: rem(960);
+  width: rem(960);
 }

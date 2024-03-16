@@ -3,7 +3,7 @@
   "preface": "If you had 5 Alans you could rule the software universe. So I recommend hiring him and having him train 4 other guys to be as good as he is. Alan is the kind of front-end developer UX designers like myself dream of.",
   "header": {
     "title": "Alan Eicker",
-    "nav": ["/#about", "/#projects", "/#career"]
+    "nav": ["/about", "/projects", "/career", "/recommendations"]
   },
   "hero": {
     "strapline": "Hi, my name is",

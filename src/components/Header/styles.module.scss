@@ -1,1 +1,27 @@
 @import '../../styles/abstracts';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: rem(20);
+  font-weight: 400;
+}
+
+.link {
+  color: $white;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.nav {
+  display: flex;
+
+  & > * + * {
+    margin-left: rem(18);
+  }
+}

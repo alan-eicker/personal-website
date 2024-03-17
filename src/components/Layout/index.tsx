@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import styles from './styles.module.scss';
-import { HeaderProps, FooterProps } from '../../interfaces/AppContent';
+import { HeaderProps, FooterProps } from '../../interfaces/components';
 
 export interface ILayoutProps {
   children: ReactNode;

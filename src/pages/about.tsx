@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { AboutProps } from 'interfaces/AppContent';
+import { AboutProps } from 'interfaces/components';
 
 const About = ({ title, content }: AboutProps) => {
   const numYearsExperience = String(new Date().getFullYear() - 2007);

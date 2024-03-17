@@ -9,6 +9,11 @@
 .logo {
   font-size: rem(20);
   font-weight: 400;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
 }
 
 .link {
@@ -16,6 +21,11 @@
   font-weight: 400;
   text-decoration: none;
   text-transform: capitalize;
+
+  &:hover,
+  &.isActive {
+    color: $brand;
+  }
 }
 
 .nav {

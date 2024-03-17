@@ -1,5 +1,20 @@
 @import '../../styles/abstracts';
 
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright {
   font-size: rem(13);
+}
+
+.socialLink {
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $brand;
+  }
 }

@@ -1,3 +1,5 @@
+import { HTMLProps } from 'react';
+
 export interface AppContent {
   preface: string;
   docTitle: string;
@@ -89,4 +91,9 @@ export interface SkillsProps {
     name: string;
     icon: string;
   }[];
+}
+
+export interface ListProps extends HTMLProps<HTMLUListElement> {
+  items: any[];
+  orientation?: 'horizontal' | 'vertical';
 }

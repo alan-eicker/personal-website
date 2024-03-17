@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import type { AppProps } from 'next/app';
 import Layout from 'components/Layout';
 import content from 'data/content.json';
-import { AppContent } from 'interfaces/AppContent';
+import { AppContent } from 'interfaces/components';
 import 'styles/base.scss';
 
 const App = ({ Component, pageProps }: AppProps) => {

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { CareerProps } from 'interfaces/AppContent';
+import { CareerProps } from 'interfaces/components';
 
 const Career = ({ title, text, resumeLink, jobHistory }: CareerProps) => {
   return (

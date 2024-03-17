@@ -23,7 +23,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  color: $brand;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: rem(40);
 }
 
 ul {

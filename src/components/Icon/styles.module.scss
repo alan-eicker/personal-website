@@ -1,1 +1,21 @@
 @import '../../styles/abstracts';
+
+.icon {
+  color: $white;
+}
+
+.sm {
+  font-size: rem(12);
+}
+
+.md {
+  font-size: rem(20);
+}
+
+.lg {
+  font-size: rem(32);
+}
+
+.xl {
+  font-size: rem(48);
+}
